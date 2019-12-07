@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("red"," ===========================\n");
-echo color("red","| Create Gojek & Redeem voucher |\n");
+echo color("green"," ===========================\n");
+echo color("blue","| Create Gojek & Redeem voucher |\n");
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
 // function change(){
@@ -35,7 +35,7 @@ echo " ===========================\n";
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("green","+] Kode verifikasi sudah di kirim")."\n";
+        echo color("green","+] Kode otp sudah di kirim")."\n";
         otp:
         echo color("nevy","?] Otp: ");
         $otp = trim(fgets(STDIN));
@@ -47,7 +47,7 @@ echo " ===========================\n";
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("green","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("red","\n===========(REDEEM VOUCHER)===========");
+        echo color("green","\n===========(REDEEM VOUCHER)===========");
         echo "\n".color("yellow","!] Claim voc GOFOODSANTUY19");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
