@@ -2,9 +2,9 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("green"," ===========================\n");
-echo color("blue","| Create Gojek & Redeem voucher |\n");
+echo color("green","| Create Gojek & Redeem voucher |\n");
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
-echo " ===========================\n";
+echo color("green"," ===========================\n");
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
