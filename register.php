@@ -47,7 +47,7 @@ echo color("green"," ===========================\n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("green","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        else{
+        }else{
             echo color("red","-] Otp yang anda input salah");
             echo"\n==================================\n\n";
             echo color("yellow","!] Silahkan input kembali\n");
