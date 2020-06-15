@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("green","[]         EVAN JAYA               \n");
-echo color("yellow","[]        VANJAY SU             \n");
+echo color("green","[]         BISMILLAH               \n");
+echo color("yellow","[]        GOLEK DUIT             \n");
 echo color("green","[]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("yellow","[]         waiting proses.....           \n");
 function change(){
